@@ -1,0 +1,417 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{31, 303}, {140, 32}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "0E95FE94-15CC-4AB2-B21B-C6DB65EB291F",
+          "font_size" : 15,
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "frame" : "{{80, 104}, {80, 32}}",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 1.5,
+          "title" : "チェックする",
+          "action" : "check_re_match",
+          "class" : "Button",
+          "image_name" : "iob:ios7_play_24",
+          "name" : "check"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{38, 158}, {319, 40}}",
+        "class" : "TextView",
+        "attributes" : {
+          "uuid" : "AFD5BA9F-EF68-4010-98FB-A5AF4B859D72",
+          "font_size" : 17,
+          "corner_radius" : 0,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "frame" : "{{89, 188}, {200, 200}}",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "editable" : true,
+          "border_width" : 1,
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextView",
+          "name" : "pattern",
+          "flex" : ""
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{38, 246}, {319, 40}}",
+        "class" : "TextView",
+        "attributes" : {
+          "uuid" : "AFD5BA9F-EF68-4010-98FB-A5AF4B859D72",
+          "flex" : "",
+          "corner_radius" : 0,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "frame" : "{{89, 188}, {200, 200}}",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "editable" : true,
+          "border_width" : 1,
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextView",
+          "name" : "text",
+          "font_size" : 17
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{38, 118}, {150, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{114, 272}, {150, 32}}",
+          "uuid" : "429A4D1A-8157-4A41-9FD7-2FD293F3AEBD",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "正規表現パターン",
+          "name" : "label1",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{38, 206}, {202, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{114, 272}, {150, 32}}",
+          "uuid" : "429A4D1A-8157-4A41-9FD7-2FD293F3AEBD",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "マッチしたいテキスト",
+          "font_size" : 18,
+          "name" : "label2"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 343}, {349, 223}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{114, 272}, {150, 32}}",
+          "uuid" : "FA6F5703-BE30-4EC1-9AEC-D072B3FDC0E4",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "name" : "result",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{38, 19}, {36, 30}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "append_symbol",
+          "frame" : "{{149, 272}, {80, 32}}",
+          "title" : "^",
+          "uuid" : "9AE19532-DC63-436F-A246-D1370BDE2586",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "button1",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{82, 19}, {35, 30}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "append_symbol",
+          "frame" : "{{149, 272}, {80, 32}}",
+          "title" : "$",
+          "uuid" : "9AE19532-DC63-436F-A246-D1370BDE2586",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "button2",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{125, 57}, {35, 32}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "append_symbol",
+          "frame" : "{{149, 272}, {80, 32}}",
+          "title" : "\\s",
+          "uuid" : "9AE19532-DC63-436F-A246-D1370BDE2586",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "button9",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{287, 59}, {41, 30}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "append_symbol",
+          "frame" : "{{149, 272}, {80, 32}}",
+          "title" : "\\",
+          "uuid" : "9AE19532-DC63-436F-A246-D1370BDE2586",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "button12",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{125, 19}, {35, 30}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "append_symbol",
+          "frame" : "{{149, 272}, {80, 32}}",
+          "title" : ".",
+          "uuid" : "9AE19532-DC63-436F-A246-D1370BDE2586",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "button3",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{168, 19}, {34, 30}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "append_symbol",
+          "frame" : "{{149, 272}, {80, 32}}",
+          "title" : "+",
+          "uuid" : "9AE19532-DC63-436F-A246-D1370BDE2586",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "button4",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{210, 19}, {69, 30}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "append_symbol",
+          "frame" : "{{149, 272}, {80, 32}}",
+          "title" : "[a-z]",
+          "uuid" : "9AE19532-DC63-436F-A246-D1370BDE2586",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "button5",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{287, 19}, {81, 30}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "append_symbol",
+          "frame" : "{{149, 272}, {80, 32}}",
+          "title" : "[A-Z]",
+          "uuid" : "9AE19532-DC63-436F-A246-D1370BDE2586",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "button6",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{38, 57}, {36, 32}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "append_symbol",
+          "frame" : "{{149, 272}, {80, 32}}",
+          "title" : "|",
+          "uuid" : "9AE19532-DC63-436F-A246-D1370BDE2586",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "button7",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{82, 57}, {35, 32}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "append_symbol",
+          "frame" : "{{149, 272}, {80, 32}}",
+          "title" : "?",
+          "uuid" : "9AE19532-DC63-436F-A246-D1370BDE2586",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "button8",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{168, 57}, {34, 32}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "append_symbol",
+          "frame" : "{{149, 272}, {80, 32}}",
+          "title" : "*",
+          "uuid" : "9AE19532-DC63-436F-A246-D1370BDE2586",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "button10",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{210, 59}, {69, 30}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "append_symbol",
+          "frame" : "{{149, 272}, {80, 32}}",
+          "title" : "[0-9]",
+          "uuid" : "9AE19532-DC63-436F-A246-D1370BDE2586",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "button11",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{194, 303}, {151, 32}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "ED84BE93-63E7-4B0D-80C9-4FD43C7900E0",
+          "font_size" : 15,
+          "corner_radius" : 5,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "frame" : "{{150, 270}, {80, 32}}",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "border_width" : 1.5,
+          "title" : "正規表現をコピー",
+          "action" : "copy_action",
+          "class" : "Button",
+          "image_name" : "iob:ios7_copy_24",
+          "name" : "copy_button"
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {379, 572}}",
+    "class" : "View",
+    "attributes" : {
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "enabled" : true,
+      "background_color" : "RGBA(0.988558,1.000000,0.736842,1.000000)",
+      "name" : "正規表現チェッカー for Python",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]
