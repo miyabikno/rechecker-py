@@ -4,7 +4,36 @@ from __future__ import division
 import ui
 import clipboard
 from console import hud_alert
-from rechecker import ReChecker
+import re
+
+
+class ReChecker:
+    # 初期設定
+    def __init__(self, pattern, text):
+        self.result = None
+        self.pattern = pattern
+        self.text = text
+
+    # 正規表現のマッチ処理
+    def check_match(self):
+        try:
+            # 正規表現チェック実行
+            self.result = re.compile(self.pattern, flags=re.DOTALL).match(self.text)
+        except:
+            # パラメータ不正
+            self.result = 'ng'
+
+    # 結果をまとめる処理
+    def summarize_result(self):
+        output = '結果:一致しました\n'
+        output += '入力したテキスト:%s\n' % self.text
+        output += 'match[0]:%s\n' % self.result.group(0)
+        for key, group in enumerate(self.result.groups()):
+            # indexは1つずれる
+            index = key + 1
+            output += 'match[%s]:%s\n' % (index, group)
+        return output
+
 
 def check_re_match(sender):
 	'@type sender: ui.Button'
@@ -48,7 +77,7 @@ v = ui.load_view('rechecker')
 
 if min(ui.get_screen_size()) >= 768:
 	# iPad
-	v.frame = (0, 0, 360, 400)
+	v.frame = (0, 0, 430, 700)
 	v.present('sheet')
 else:
 	# iPhone
